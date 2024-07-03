@@ -1,15 +1,9 @@
 # env-demo
 Environment variable demonstration
 
-(Все, что ниже - переписать тебе под свой манер).
-
-Вариант запуска 1
+Пример запуска в powershell
 ```
-export VITA=Vita1
-go build main.go
-./main
-```
-Вариант запуска 2
-```
-VITA=Vita1 go run main.go
-```
+$env:OP1 = "10"
+$env:OP2 = "5"
+$env:OPERATION = "add"
+go run main.go
